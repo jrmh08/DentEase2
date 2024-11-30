@@ -1,0 +1,167 @@
+/* Navbar styles */
+.navbar {
+
+  background-color: #262c2f;
+  position: relative; 
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  width: 100%; 
+  padding: 1px 0; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  display: inline;
+  margin: 0 15px; 
+  padding: 10px 20px;
+  border-radius: 50px;
+  transition: background-color 0.3s ease, transform 1s ease;
+}
+
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 30px 0px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navbar ul li:hover {
+  background-color: #4e6a86;
+  transform: scale(1.1);
+  transition: background-color 0.9s ease, transform 1.5s ease;
+}
+
+/* Style for the active page */
+.navbar ul li.active {
+  background-color: #4e6a86;
+  transform: scale(1.1);
+  transition: background-color 0.9s ease, transform 1.5s ease;
+}
+
+/* Style for the logo */
+.navbar .navbar-container img.logo {
+  width: 13%;
+  height: auto;
+}
+
+/* Burger menu styles */
+.burger-menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 15px;
+}
+
+.bar {
+  width: 35px;
+  height: 5px;
+  background-color: #fff;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Menu items styles for small screens */
+.menu-items {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  justify-content: flex-end;
+}
+
+.menu-items li {
+  display: none;
+}
+
+.menu-items li.active {
+  background-color: #4e6a86;
+}
+
+@media (max-width: 800px) {
+  .burger-menu {
+    display: flex;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+
+ 
+  .navbar ul.open {
+    display: flex;
+    flex-direction: column; 
+    position: absolute; 
+    top: 100%; 
+    left: 0;
+    width: 100%;
+    background-color: #262c2f;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+}
+
+/* Profile icon styles */
+.profileicon {
+  margin-right: 20px;
+  font-size: 24px;
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: relative;
+}
+
+/* Dropdown styles */
+.dropdown-menu {
+  position: absolute;
+  background-color: #28769c;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  right:8rem;
+  z-index: 1000;
+ padding:11px;
+ 
+}
+
+.notifications-dropdown {
+  color: white;
+  position: absolute;
+  background-color: #357ca0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  right: 13rem;
+  z-index: 1000;
+  padding:11px;
+
+}
+
+.dropdown-item {
+  color: #fff;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+.navbar ul li:hover,
+.navbar ul li.active {
+  background-color: #4e6a86;
+  transform: scale(1.1);
+  transition: background-color 0.9s ease, transform 1.5s ease;
+}
+

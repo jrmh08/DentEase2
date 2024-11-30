@@ -1,0 +1,300 @@
+/* Home Page Section Styles */
+
+.HomePage-container {
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.homepage-carousel-container {
+  position: relative;
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  overflow: hidden;
+  opacity: 0;
+  animation: fadeInContainer 1s ease-in-out forwards;
+}
+
+@keyframes fadeInContainer {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.homepage-text-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  position: relative;
+  background: #1C6EA4;
+  padding: 20px;
+  color: white;
+  z-index: 2;
+  text-align: center; 
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+.homepage-text {
+  max-width: 600px;
+  font-size: 70px;
+  text-align: left;
+  -webkit-text-stroke: 3px #dfe9f3;
+  background-clip: text;
+  color: #f4f4f4;
+  margin-top: 10px;
+}
+
+.homepage-text-container h1 {
+  font-size: 15px;
+  margin-bottom: 10px;
+  margin-right: 370px;
+}
+
+
+.homepage-image-container {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.homepage-carousel-image {  
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+
+}
+
+@keyframes fadeInOut {
+  0%, 100% {
+    filter: blur(10px); 
+  }
+  50% {
+    filter: blur(0px);
+  }
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  color: black;
+  font-size: 18px;
+}
+
+.carousel-button.prev {
+  left: 10px;
+  transform: translateY(-50%);
+}
+
+.carousel-button.next {
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+.carousel-button:hover {
+  background-color: #ddd;
+}
+
+/* Facilities Section Styles */
+.facilities {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(45deg, #2490EB 25%, transparent 25%, transparent 75%, #2490EB 75%);
+  padding: 20px;
+  width: 100%;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.facilities-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.facilities-text {
+  text-align: center;
+  margin-bottom: 35px;
+  margin-top: 10px;
+  font-size: 40px;
+  color: #207cc7;
+  -webkit-text-stroke: .5px #777575; 
+  background-clip: text;
+}
+
+.facility-boxes {
+  display: flex;
+  justify-content: space-between;
+}
+
+.facility-box {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+  background-color: #ffffff;
+  transition: transform 0.3s ease-in-out;
+  box-sizing: border-box;
+  text-align: left;
+  overflow: hidden;
+  color: black;
+  border-radius: 10px;
+  margin-top: 15px;
+  margin-bottom: 90px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.facility-box p {
+  padding: 18px;
+
+}
+
+.facility-image {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.facility-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+ 
+}
+
+.facility-box h3 {
+  font-size: 34px;
+  margin-bottom: -10px;
+  margin-left: 16px;
+  margin-top: 0.5px;
+}
+
+.facility-box p {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.facility-box:hover {
+  transform: scale(1.05);
+}
+
+/* Contact Section Styles */
+.contact-container {
+  background-color: #f4f4f4;
+  color: #333;
+  font-family: poppins, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  margin-left: 10%;
+  margin-bottom: 100px;
+}
+
+.office-hours {
+  width: 60%;
+  color: #232f33;
+  margin: 20px auto;
+}
+
+.office-hours h3 {
+  font-size: 35px;
+}
+
+.office-hours-table {
+  width: 500px;
+  border-collapse: collapse;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: 50px;
+}
+
+.office-hours-table th {
+  background-color: rgba(50, 99, 118, 0.984);
+  color: #fff;
+  padding: 16px;
+  text-align: center;
+  border: 2px solid #000000;
+  width: 100px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.office-hours-table td {
+  padding: 15px;
+  border: 2px solid #000000;
+  width: 50px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.contact-heading {
+  justify-content: center;
+  text-align: center;
+  margin-top: 40px;
+  margin-right: 46px;
+  background-color: rgba(50, 99, 118, 0.984);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+  padding: 3px;
+}
+
+.contact-heading h2 {
+  margin-bottom: -8px;
+  color: #fff;
+  font-size: 28px;
+}
+
+.contact-heading p {
+  color: #fff;
+}
+
+.find-us {
+  width: 100%;
+  margin: 20px 0;
+  margin-right: 10%;
+}
+
+.find-us h3 {
+  font-size: 35px;
+  margin-bottom: -10px;
+}
+
+.find-us img {
+  width: 850px;
+  height: 500px;
+  margin-left: 40px;
+  margin-right: 40px;
+  border-radius: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+}
